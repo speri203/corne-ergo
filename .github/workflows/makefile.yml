@@ -17,6 +17,7 @@ jobs:
 
     - name: Install dependencies
       run: python3 -m pip install --user qmk
+      run: qmk setup
 
     - name: Build firmware
       run: ./build.sh
