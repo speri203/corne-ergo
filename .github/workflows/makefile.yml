@@ -23,5 +23,8 @@ jobs:
     - name: Running qmk setup
       run: qmk setup
 
+    - name: Make submodules
+      run: make git-submodule
+
     - name: Build firmware
       run: make crkbd:custom_vial
